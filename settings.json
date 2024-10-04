@@ -597,7 +597,7 @@
             }
         },
     },
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Default Light+",
     "todohighlight.defaultStyle": {
         "color": "#5395ff",
         "backgroundColor": ""

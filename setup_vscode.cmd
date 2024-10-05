@@ -38,7 +38,7 @@ copy "%dir%/keybindings.json" "%vscode_path%/keybindings.json"
 
 if exist vscode.lnk (
 	echo Starting vscode.
-	vscode.lnk
+	start vscode.lnk | REM Note: The pipe is here to keep VSCode from blocking the cmd thread.
 ) else (
 	echo To start VSCode automatically after setup, add a windows shortcut called `vscode.lnk` next to this .cmd file
 )

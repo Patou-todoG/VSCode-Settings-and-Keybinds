@@ -640,14 +640,14 @@
                 "args": [
                     "-Xfrozen_modules=off"
                 ]
-            }
+            },
         ],
         "compounds": []
     },
     "editor.wrappingIndent": "indent",
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
-    "GitLive.Special branches": "main|master|live|trunk|dev|develop|qa|test|release[-/].*",
+    "GitLive.Special branches": "main|master|trunk|dev|develop|qa|test|release[-/].*",
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.colors": [
         "rgba(255,255,255,0.4)",

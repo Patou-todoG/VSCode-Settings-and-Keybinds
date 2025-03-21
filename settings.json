@@ -627,6 +627,7 @@
                 "justMyCode": true,
                 "args": [
                     "-tooltip-offset", "0,-120",
+                    "--less-compact",
                     "-Xfrozen_modules=off"
                 ]
             },
@@ -711,7 +712,8 @@
         "editor.unicodeHighlight.invisibleCharacters": true
     },
     "[markdown]": {
-        "editor.unicodeHighlight.invisibleCharacters": true
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "liveServer.settings.file": "404.html",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -743,4 +745,22 @@
     "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     "C_Cpp.default.compilerPath": "c:\\Program Files\\CodeBlocks\\MinGW\\bin\\gcc.exe",
     "telemetry.telemetryLevel": "error",
+    "redhat.telemetry.enabled": false,
+    "gitlens.ai.experimental.model": "anthropic:claude-instant-1",
+    "editor.indentSize": "tabSize",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: VSCode, BreakBeforeBraces: BS_Attach }",
+    "git.closeDiffOnOperation": true,
+    "sqldeveloper.sqlHistory.historyLimit": 500,
+    "sqldeveloper.telemetry.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*": "$(capture).import, $(capture).uid"
+    },
+    "explorer.fileNesting.expand": false,
+    "python.createEnvironment.trigger": "off",
+    "editor.renderWhitespace": "all",
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
 }

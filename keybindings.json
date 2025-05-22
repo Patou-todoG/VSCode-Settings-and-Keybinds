@@ -212,5 +212,14 @@
   {
     "key": "alt+f5",
     "command": "workbench.action.debug.start"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "problems.action.copyMessage",
+    "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
+  },
+  {
+    "key": "alt+numpad0",
+    "command": "editor.debug.action.selectionToWatch"
   }
 ]

@@ -660,7 +660,6 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "python.analysis.completeFunctionParens": true,
     "discord.detailsDebugging": "Debugging {file_name} of {total_lines} lines.",
     "discord.detailsEditing": "Editing {file_name} of {total_lines} lines.",
     "editor.codeActionsOnSave": {},
@@ -763,4 +762,13 @@
     "workbench.editorAssociations": {
         "*.svg": "default"
     },
+    "editor.pasteAs.preferences": [
+        "markdown.link.video",
+        "markdown.link.image",
+        "markdown.link.uri",
+        "markdown.link.audio",
+        "markdown.link",
+    ],
+    "scm.defaultViewMode": "tree",
+    "search.defaultViewMode": "tree",
 }

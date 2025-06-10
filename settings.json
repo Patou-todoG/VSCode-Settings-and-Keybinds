@@ -760,7 +760,8 @@
     "python.createEnvironment.trigger": "off",
     "editor.renderWhitespace": "all",
     "workbench.editorAssociations": {
-        "*.svg": "default"
+        "*.svg": "default",
+        "git-rebase-todo": "gitlens.rebase"
     },
     "editor.pasteAs.preferences": [
         "markdown.link.video",
@@ -771,4 +772,21 @@
     ],
     "scm.defaultViewMode": "tree",
     "search.defaultViewMode": "tree",
+    "git.openRepositoryInParentFolders": "always",
+    "markdown-pdf.mermaidServer": "https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.js",
+    "git.showReferenceDetails": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": false,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": false,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "debug.autoExpandLazyVariables": "on",
 }

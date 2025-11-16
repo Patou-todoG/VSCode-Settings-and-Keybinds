@@ -1,11 +1,11 @@
 {
     "java.semanticHighlighting.enabled": true,
-    "editor.wordWrap": "on",
     "files.exclude": {
+        "**/__pycache__": true,
         "**/.classpath": true,
+        "**/.factorypath": true,
         "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+        "**/.settings": true
     },
     "explorer.confirmDelete": false,
     "java.debug.settings.enableRunDebugCodeLens": false,
@@ -71,10 +71,9 @@
             // "statusBar.debuggingBackground": "#885a04",
             // "statusBar.debuggingForeground": "#ffffff",
             "editorBracketHighlight.foreground1": "#000",
-            "editorBracketHighlight.foreground2": "#a5be00",
-            "editorBracketHighlight.foreground3": "#1dc300",
-            "editorBracketHighlight.foreground4": "#ff00fb",
-            "editorBracketHighlight.foreground5": "#00bdc7",
+            "editorBracketHighlight.foreground2": "#ff00fb",
+            "editorBracketHighlight.foreground3": "#0dbd00",
+            // "editorBracketHighlight.foreground4": "#00b7ff",
             "editorBracketHighlight.unexpectedBracket.foreground": "#ff2018",
             // "editor.foldBackground": "#00000055",
             // "scrollbarSlider.background": "#ffffff",
@@ -84,7 +83,7 @@
             
             // Inlay hints
             "editorInlayHint.background": "#ffffff99",
-            "editorInlayHint.foreground": "#000000cc",
+            "editorInlayHint.foreground": "#00000053",
             // "editorInlayHint.background": "#00000099",
             // "editorInlayHint.foreground": "#ffffff",
             // "editorInlayHint.parameterBackground": "#00000099",
@@ -123,6 +122,16 @@
                     "scope": "variable.other.constant",
                     "settings": {
                         "foreground": "#a65050",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        "punctuation.bracket",
+                        "punctuation.definition.parameters.end.bracket",
+                        "punctuation.definition.parameters.begin.bracket",
+                    ],
+                    "settings": {
                         "fontStyle": "bold"
                     }
                 },
@@ -182,6 +191,14 @@
                         "foreground": "#000",
                     }
                 },
+                
+                // ============== Rust =============
+                // {
+                //     "scope": "entity.name.type.numeric.rust",
+                //     "settings": {
+                //         "fontStyle": "italic",
+                //     }
+                // },
             ],
             "keywords": "#FF0000",
             "comments": {
@@ -507,6 +524,16 @@
             "backgroundColor": "red"
         },
         {
+            "text": "heigth",
+            "color": "white",
+            "backgroundColor": "red"
+        },
+        {
+            "text": "lenght",
+            "color": "white",
+            "backgroundColor": "red"
+        },
+        {
             "text": "</",
             "color": "#ff6666",
             // "overviewRulerColor": ""
@@ -543,6 +570,10 @@
                     "foreground": "#a953ff",
                     "fontStyle": "italic bold"
                 },
+                "clsParameter": {
+                    "foreground": "#ee8f09",
+                    "fontStyle": "italic bold"
+                },
                 "method": "#7c6cf6",
                 "parameter": "#53ff98",
                 "parameter.declaration": {
@@ -573,6 +604,9 @@
                 "variable.readonly": {
                     "foreground": "#fb00ff",
                 },
+                "property.readonly": {
+                    "foreground": "#ff53a9",
+                },
                 "variable": "#000000",
                 "property": "#6d2c00",
                 "class": "#d58a00",
@@ -585,6 +619,10 @@
                 // },
                 "selfParameter": {
                     "foreground": "#b300ff",
+                    "fontStyle": "italic bold"
+                },
+                "clsParameter": {
+                    "foreground": "#d58a00",
                     "fontStyle": "italic bold"
                 },
                 "method": "#b300ff",
@@ -605,43 +643,44 @@
     "GitLive.Issue tracker integration": "Disabled",
     "git.autofetch": true,
     "launch": {
+    
         "configurations": [
-            {
-                "name": "Python : console debug",
-                "type": "debugpy",
-                "request": "launch",
-                "program": "${file}",
-                "console": "integratedTerminal",
-                "justMyCode": true,
-                "args": [
-                    "-console",
-                    "-Xfrozen_modules=off"
-                ]
-            },
-            {
-                "name": "Python : commandline arguments",
-                "type": "debugpy",
-                "request": "launch",
-                "program": "${file}",
-                "console": "integratedTerminal",
-                "justMyCode": true,
-                "args": [
-                    "-tooltip-offset", "0,-120",
-                    "--less-compact",
-                    "-Xfrozen_modules=off"
-                ]
-            },
-            {
-                "name": "Python : fichier actif",
-                "type": "debugpy",
-                "request": "launch",
-                "program": "${file}",
-                "console": "integratedTerminal",
-                "justMyCode": false,
-                "args": [
-                    "-Xfrozen_modules=off"
-                ]
-            },
+            // {
+            //     "name": "Python : console debug",
+            //     "type": "debugpy",
+            //     "request": "launch",
+            //     "program": "${file}",
+            //     "console": "integratedTerminal",
+            //     "justMyCode": true,
+            //     "args": [
+            //         "-console",
+            //         "-Xfrozen_modules=off"
+            //     ]
+            // },
+            // {
+            //     "name": "Python : commandline arguments",
+            //     "type": "debugpy",
+            //     "request": "launch",
+            //     "program": "${file}",
+            //     "console": "integratedTerminal",
+            //     "justMyCode": true,
+            //     "args": [
+            //         "-tooltip-offset", "0,-120",
+            //         "--less-compact",
+            //         "-Xfrozen_modules=off"
+            //     ]
+            // },
+            // {
+            //     "name": "Python : fichier actif",
+            //     "type": "debugpy",
+            //     "request": "launch",
+            //     "program": "${file}",
+            //     "console": "integratedTerminal",
+            //     "justMyCode": false,
+            //     "args": [
+            //         "-Xfrozen_modules=off"
+            //     ]
+            // },
         ],
         "compounds": []
     },
@@ -712,12 +751,13 @@
     },
     "[markdown]": {
         "editor.unicodeHighlight.invisibleCharacters": true,
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
     },
     "liveServer.settings.file": "404.html",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.insertSpaces": false,
-    "git.confirmSync": false,
     "workbench.editor.pinnedTabSizing": "compact",
     "window.density.editorTabHeight": "compact",
     "liveServer.settings.fullReload": true,
@@ -754,7 +794,7 @@
     "chat.commandCenter.enabled": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
-        "*": "$(capture).import, $(capture).uid"
+        "*": "$(capture).import, $(capture).uid, test_$(capture)"
     },
     "explorer.fileNesting.expand": false,
     "python.createEnvironment.trigger": "off",
@@ -772,8 +812,9 @@
     ],
     "scm.defaultViewMode": "tree",
     "search.defaultViewMode": "tree",
+    "editor.wordWrap": "on",
     "git.openRepositoryInParentFolders": "always",
-    "markdown-pdf.mermaidServer": "https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.js",
+    "markdown-pdf.mermaidServer": "https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.js",
     "git.showReferenceDetails": false,
     "gitlens.views.scm.grouped.views": {
         "commits": true,
@@ -788,5 +829,17 @@
         "searchAndCompare": false,
         "launchpad": false
     },
+    "git.confirmSync": false,
     "debug.autoExpandLazyVariables": "on",
+    "insertnum.start": 1, // Unregistered setting for Insert Numbers (fix) extension
+    "files.readonlyInclude": {
+        "**/.cargo/registry/src/**/*.rs": true,
+        "**/.cargo/git/checkouts/**/*.rs": true,
+        "**/lib/rustlib/src/rust/library/**/*.rs": true,
+    },
+    "java.saveActions.organizeImports": true,
+    "git.blame.editorDecoration.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "diffEditor.renderSideBySide": true,
+    "intelliphp.inlineSuggestionsEnabled": false,
 }

@@ -55,7 +55,7 @@
             // "editorInlayHint.typeBackground": "#4d4d4d99",
             "editorInlayHint.typeForeground": "#d8d400cc",
         },
-        "[Default Light+]": {
+        "[Default Light+][Light+]": {
             "foreground": "#000",
             // "selection.background": "#1e00ff8d",
             // "editor.selectionHighlightBorder": "#1aff00",
@@ -104,7 +104,7 @@
         "[Default Dark+]": {
             "keywords": "#fb4934"
         },
-        "[Default Light+]": {
+        "[Default Light+][Light+]": {
             "textMateRules": [
                 {
                     "scope": "keyword",
@@ -583,7 +583,7 @@
                 "*.decorator": "#ff8000"
             }
         },
-        "[Default Light+]": {
+        "[Default Light+][Light+]": {
             "enabled": true,
             "rules": {
                 "*.builtin": {
@@ -631,11 +631,15 @@
                     "underline": true
                 },
                 "number": "#00D4D7",
-                "*.decorator": "#ff8000"
+                "*.decorator": "#ff8000",
+                "*.deprecated": {
+                    "strikethrough": true
+                },
             }
         },
     },
-    "workbench.colorTheme": "Default Light+",
+    // "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Light+",
     "todohighlight.defaultStyle": {
         "color": "#5395ff",
         "backgroundColor": ""
@@ -842,4 +846,13 @@
     "workbench.editor.empty.hint": "hidden",
     "diffEditor.renderSideBySide": true,
     "intelliphp.inlineSuggestionsEnabled": false,
+    "chat.disableAIFeatures": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "editor.foldingImportsByDefault": true,
+    "java.sources.organizeImports.staticStarThreshold": 1,
+    "java.sources.organizeImports.starThreshold": 2,
+    "jekyll-run.commandLineArguments": "--livereload",
+    "liquid.engine": "jekyll",
+    "debug.breakpointsView.presentation": "tree",
+    "python.analysis.typeCheckingMode": "basic",
 }

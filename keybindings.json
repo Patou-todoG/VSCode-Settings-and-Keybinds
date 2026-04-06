@@ -241,5 +241,15 @@
     "key": "ctrl+shift+b",
     "command": "extension.markdown-pdf.pdf",
     "when": "editorLangId==markdown"
-  }
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "markdownTablePrettify.prettifyTables",
+    "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "-markdownTablePrettify.prettifyTables",
+    "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
 ]

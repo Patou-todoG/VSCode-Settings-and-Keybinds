@@ -31,7 +31,7 @@ if exist %dir% (
     goto wait_site
 )
 
-
+md "%vscode_path%"
 copy "%dir%/settings.json" "%vscode_path%/settings.json"
 copy "%dir%/keybindings.json" "%vscode_path%/keybindings.json"
 

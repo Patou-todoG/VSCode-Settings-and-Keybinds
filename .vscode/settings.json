@@ -1,0 +1,13 @@
+{
+	"json.schemas": [
+		{
+			"fileMatch": [
+				"keybindings.json",
+				"settings.json",
+			],
+			"schema": {
+				"allowTrailingCommas": true,
+			},
+		},
+	]
+}

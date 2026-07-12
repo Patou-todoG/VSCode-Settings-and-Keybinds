@@ -533,6 +533,16 @@
             "backgroundColor": "red"
         },
         {
+            "text": "ammené",
+            "color": "white",
+            "backgroundColor": "red"
+        },
+        {
+            "text": "réferrer",
+            "color": "white",
+            "backgroundColor": "red"
+        },
+        {
             "text": "</",
             "color": "#ff6666",
             // "overviewRulerColor": ""
@@ -637,7 +647,9 @@
             }
         },
     },
-    // "workbench.colorTheme": "Default Light+",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+    "workbench.preferredLightColorTheme": "Light+",
     "workbench.colorTheme": "Light+",
     "todohighlight.defaultStyle": {
         "color": "#5395ff",
@@ -783,7 +795,7 @@
         80, {"column": 100, "color": "#ca5959"},
     ],
     "editor.minimap.enabled": false,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     "telemetry.telemetryLevel": "error",
     "redhat.telemetry.enabled": false,
@@ -796,14 +808,16 @@
     "chat.commandCenter.enabled": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
-        "*": "$(capture).import, $(capture).uid, test_$(capture)"
+        "*": "$(capture).import, $(capture).uid, test_$(capture), $(capture).res.txt"
     },
     "explorer.fileNesting.expand": false,
     "python.createEnvironment.trigger": "off",
     "editor.renderWhitespace": "all",
     "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
         "*.svg": "default",
-        "git-rebase-todo": "gitlens.rebase"
+        "git-rebase-todo": "gitlens.rebase",
+        "*.png": "image-diff.image-with-diff"
     },
     "editor.pasteAs.preferences": [
         "markdown.link.video",
@@ -853,4 +867,18 @@
     "liquid.engine": "jekyll",
     "debug.breakpointsView.presentation": "tree",
     "python.analysis.typeCheckingMode": "basic",
+    "task.allowAutomaticTasks": "on",
+    "workbench.editor.useModal": "off",
+    "diffEditor.experimental.showMoves": true,
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+        "gitlens.ai.enabled": false,
+    "[liquid]": {
+        "editor.defaultFormatter": "sissel.shopify-liquid"
+    },
+    "terminal.integrated.tabs.enabled": false,
+    "search.exclude": {
+        "**/_site": true
+    },
+    "explorer.confirmPasteNative": false,
 }

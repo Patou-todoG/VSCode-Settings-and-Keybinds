@@ -252,4 +252,58 @@
     "command": "-markdownTablePrettify.prettifyTables",
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.togglePreview",
+    "when": "!terminalFocus && activeCustomEditorId == 'vscode.markdown.preview.editor' || editorFocus && !notebookEditorFocused && !terminalFocus && resourceLangId =~ /^(markdown|prompt|instructions|chatagent|skill)$/"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.pasteAsText",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "-workbench.action.chat.focusQuestionCarouselTerminal",
+    "when": "chatHasQuestionCarousel && chatQuestionCarouselHasTerminal && inChat && inChatQuestionCarousel"
+  },
+  {
+    "key": "alt+t",
+    "command": "-workbench.action.chat.toggleThinkingContentAccessibleView",
+    "when": "accessibleViewIsShown && chatIsEnabled && accessibleViewCurrentProviderId == 'panelChat'"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.focusWindow",
+        "workbench.action.quickOpen",
+      ]
+    },
+    "systemWide": true,
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.focusWindow",
+        "workbench.action.showCommands",
+      ]
+    },
+    "systemWide": true,
+  },
 ]

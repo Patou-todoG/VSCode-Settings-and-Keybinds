@@ -306,4 +306,22 @@
     },
     "systemWide": true,
   },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.extension.closePreview",
+    "when": "activeWebviewPanelId == 'markdown.preview'"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "git.commitMessageAccept",
+    "when": "editorFocus && editorLangId == 'git-commit'"
+  },
+  {
+    "key": "ctrl+numpad_multiply",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+oem_5",
+    "command": "-workbench.action.splitEditor"
+  }
 ]

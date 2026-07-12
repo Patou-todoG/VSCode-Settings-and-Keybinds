@@ -252,4 +252,32 @@
     "command": "-markdownTablePrettify.prettifyTables",
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.togglePreview",
+    "when": "!terminalFocus && activeCustomEditorId == 'vscode.markdown.preview.editor' || editorFocus && !notebookEditorFocused && !terminalFocus && resourceLangId =~ /^(markdown|prompt|instructions|chatagent|skill)$/"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.extension.closePreview",
+    "when": "activeWebviewPanelId == 'markdown.preview'"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.pasteAsText",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "git.commitMessageAccept",
+    "when": "editorFocus && editorLangId == 'git-commit'"
+  },
+  {
+    "key": "ctrl+numpad_multiply",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+oem_5",
+    "command": "-workbench.action.splitEditor"
+  }
 ]

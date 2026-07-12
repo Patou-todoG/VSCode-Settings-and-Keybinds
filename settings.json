@@ -595,7 +595,7 @@
                     "foreground": "#ff0000",
                     "bold": false,
                     "italic": false,
-                }, 
+                },
                 "*.readonly": {
                     "bold": true,
                     "italic": true,
@@ -610,11 +610,12 @@
                 "property": "#6d2c00",
                 "class": "#d58a00",
                 "*.typeHint": "#c0c000",
+                "typeParameter": "#8dc000",
                 "function": "#0062ff",
                 // "magicFunction": "#5395ff",
                 // "magicFunction.declaration": "#5395ff",
                 // "function.readonly": {
-                    //     "foreground": "#8a63ff",
+                //     "foreground": "#8a63ff",
                 // },
                 "selfParameter": {
                     "foreground": "#b300ff",
@@ -700,7 +701,8 @@
     ],
     "gitlens.plusFeatures.enabled": false,
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "diffEditor.ignoreTrimWhitespace": true
     },
     "discord.detailsDebugging": "Debugging {file_name} of {total_lines} lines.",
     "discord.detailsEditing": "Editing {file_name} of {total_lines} lines.",
@@ -713,7 +715,7 @@
     "highlight-matching-tag.styles": {
         "opening": {
             "full": {
-                "underline": "yellow"
+                "underline": "#ff0000"
             }
         },
         "inner": {
@@ -756,7 +758,8 @@
         "editor.unicodeHighlight.invisibleCharacters": true,
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.tabSize": 2,
-        "editor.insertSpaces": true
+        "editor.insertSpaces": true,
+        "editor.wordWrap": "off",
     },
     "liveServer.settings.file": "404.html",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -783,7 +786,7 @@
         80, {"column": 100, "color": "#ca5959"},
     ],
     "editor.minimap.enabled": false,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     "telemetry.telemetryLevel": "error",
     "redhat.telemetry.enabled": false,
@@ -840,7 +843,7 @@
         "**/lib/rustlib/src/rust/library/**/*.rs": true,
     },
     "java.saveActions.organizeImports": true,
-    "git.blame.editorDecoration.enabled": false,
+    "git.blame.editorDecoration.enabled": true,
     "workbench.editor.empty.hint": "hidden",
     "diffEditor.renderSideBySide": true,
     "intelliphp.inlineSuggestionsEnabled": false,
@@ -853,4 +856,53 @@
     "liquid.engine": "jekyll",
     "debug.breakpointsView.presentation": "tree",
     "python.analysis.typeCheckingMode": "basic",
+    "git.blame.ignoreWhitespace": true,
+    "workbench.editor.useModal": "off",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "diffEditor.experimental.showMoves": true,
+    "terminal.integrated.suggest.quickSuggestions": {
+        "commands": "on",
+        "arguments": "on",
+        "unknown": "off"
+    },
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnreachable": "information",
+        "reportUnusedVariable": "information",
+        "reportUnusedImport": "information",
+        "reportUnusedClass": "information",
+        "reportUnusedFunction": "information",
+        // "reportArgumentType": "warning",
+        // "reportUnknownParameterType": "warning",
+        // "reportUnknownArgumentType": "warning",
+        // "reportOptionalSubscript": "warning",
+    },
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+    "terminal.integrated.initialHint": false,
+    "isort.severity": {
+        "E": "Warning"
+    },
+    "isort.check": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "gitlens.ai.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "git.enableSmartCommit": true,
+    "gitlens.blame.ignoreWhitespace": true,
+    "gitlens.advanced.blame.customArguments": [
+        "--ignore-revs-file",
+        ".git-blame-ignore-revs",
+    ],
 }

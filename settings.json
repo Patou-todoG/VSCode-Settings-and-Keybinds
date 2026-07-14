@@ -799,7 +799,11 @@
     ],
     "editor.minimap.enabled": false,
     "extensions.autoUpdate": "off",
-    "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
+    // "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Fira Code, DejaVu Sans Mono, Consolas, 'Courier New', monospace",
+    // = == === != !== <= =>==|=<<=< <> a*b A*B g@&
+    "editor.fontLigatures": "'cv02', 'ss03'",
+    // "editor.fontLigatures": true,
     "telemetry.telemetryLevel": "error",
     "redhat.telemetry.enabled": false,
     "gitlens.ai.experimental.model": "anthropic:claude-instant-1",

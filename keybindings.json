@@ -323,5 +323,14 @@
   {
     "key": "ctrl+oem_5",
     "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "revealFileInOS"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "-revealFileInOS",
+    "when": "!editorFocus"
   }
 ]

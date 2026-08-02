@@ -506,7 +506,7 @@
          *   TODO: Implement things
          *   and
         */
-        "\\bTODO\\b": {
+        "\\b(TODO)\\b": {
             "decorations": [
                 {
                     "overviewRulerColor": "blue",
@@ -515,7 +515,7 @@
                 },
             ],
         },
-        "\\b(FIXME|BUG|UGLY|DEBUG|HACK)\\b": {
+        "\\b(FIXME)\\b": {
             "decorations": [
                 {
                     "overviewRulerColor": "red",
@@ -1028,7 +1028,6 @@
     "[liquid]": {
         "editor.defaultFormatter": "sissel.shopify-liquid"
     },
-    "terminal.integrated.tabs.enabled": false,
     "search.exclude": {
         "**/_site": true
     },
@@ -1041,7 +1040,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"

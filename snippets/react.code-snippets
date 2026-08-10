@@ -1,0 +1,30 @@
+{
+	"Component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "!component",
+		"body": [
+			"export type ${1:NomComposant}Props = {};",
+			"",
+			"export const ${1:NomComposant}: React.FC<${1:NomComposant}Props> = ({}) => {",
+			"\treturn (<></>);",
+			"}",
+		],
+	},
+	"useState": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "!useState",
+		"body": [
+			"const [${1:nom}, set${1/(.*)/${1:/pascalcase}/}] = useState<${2:type}>(${3:startValue});",
+		],
+	},
+	"loc": {
+		"scope": "javascriptreact,typescriptreact,javascript,typescript",
+		"prefix": "locObject()",
+		"body": [
+			"loc() //",
+			"\t.set(\"${1:key}\", \"${2:value}\")",
+			"\t.set(\"${3:key}\", \"${4:value}\")",
+			// ",",
+		],
+	},
+}

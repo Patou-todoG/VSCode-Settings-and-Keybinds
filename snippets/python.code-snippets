@@ -1,0 +1,10 @@
+{
+	"Main": {
+		"scope": "python",
+		"prefix": "if __name__ == \"__main__\":",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"\t",
+		],
+	},
+}

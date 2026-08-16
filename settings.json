@@ -1078,4 +1078,5 @@
         ".git-blame-ignore-revs",
     ],
     "disableLigatures.mode": "Line",
+    "editor.defaultColorDecorators": "always",
 }

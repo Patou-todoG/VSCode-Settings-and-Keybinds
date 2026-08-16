@@ -100,7 +100,7 @@
     "npm.keybindingsChangedWarningShown": true,
     "editor.guides.bracketPairs": "active",
     "editor.tokenColorCustomizations": {
-        "[Default Dark+]": {
+        "[Default Dark+][Dark+]": {
             "keywords": "#fb4934"
         },
         "[Default Light+][Light+]": {
@@ -750,6 +750,7 @@
                 },
                 "variable": "#000000",
                 "property": "#6d2c00",
+                "variable.classMember": "#6d2c00",
                 "class": "#d58a00",
                 "*.typeHint": "#c0c000",
                 "typeParameter": "#8dc000",
@@ -779,9 +780,65 @@
                 },
             }
         },
+        "[Default Dark+][Dark+]": {
+            "enabled": true,
+            "rules": {
+                "*.builtin": {
+                    "foreground": "#7672ff",
+                    "bold": true,
+                    "italic": true,
+                },
+                "variable.builtin": "#fd96ff",
+                "builtinConstant.readonly": {
+                    "foreground": "#fb4934",
+                    "bold": false,
+                    "italic": false,
+                },
+                "*.readonly": {
+                    "bold": true,
+                    "italic": true,
+                },
+                "variable.readonly": {
+                    "foreground": "#fc53ff",
+                },
+                "property.readonly": {
+                    "foreground": "#ff53a9",
+                },
+                "variable": "#ddd",
+                "property": "#ffe4d2",
+                "variable.classMember": "#ffe4d2",
+                "class": "#ffb753",
+                "*.typeHint": "#eeee09",
+                "typeParameter": "#a7e400",
+                "function": "#5395ff",
+                // "magicFunction": "#5395ff",
+                // "magicFunction.declaration": "#5395ff",
+                // "function.readonly": {
+                //     "foreground": "#8a63ff",
+                // },
+                "selfParameter": {
+                    "foreground": "#a953ff",
+                    "fontStyle": "italic bold"
+                },
+                "clsParameter": {
+                    "foreground": "#ffb753",
+                    "fontStyle": "italic bold"
+                },
+                "method": "#cf60ff",
+                "parameter": "#53ff98",
+                "parameter.declaration": {
+                    "underline": true
+                },
+                "number": "#00fbff",
+                "*.decorator": "#ff9830",
+                "*.deprecated": {
+                    "strikethrough": true
+                },
+            }
+        },
     },
     "window.autoDetectColorScheme": true,
-    "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+    "workbench.preferredDarkColorTheme": "Dark+",
     "workbench.preferredLightColorTheme": "Light+",
     "workbench.colorTheme": "Light+",
     "GitLive.Issue tracker integration": "Disabled",

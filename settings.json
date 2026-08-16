@@ -1023,7 +1023,7 @@
     "workbench.editor.useModal": "off",
     "diffEditor.experimental.showMoves": true,
     "markdown.preview.doubleClickToSwitchToEditor": true,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "gitlens.ai.enabled": false,
     "[liquid]": {
         "editor.defaultFormatter": "sissel.shopify-liquid"

@@ -1,5 +1,45 @@
-// Place your key bindings in this file to override the defaults
 [
+  /*
+  ┌────────────────────┐
+  │ Computer-dependant │
+  └────────────────────┘
+  */
+  // {
+  //   "key": "ctrl+p",
+  //   "command": "-workbench.action.quickOpen"
+  // },
+  // {
+  //   "key": "ctrl+p",
+  //   "command": "runCommands",
+  //   "args": {
+  //     "commands": [
+  //       "workbench.action.focusWindow",
+  //       "workbench.action.quickOpen",
+  //     ]
+  //   },
+  //   "systemWide": true,
+  // },
+  // {
+  //   "key": "ctrl+shift+p",
+  //   "command": "-workbench.action.showCommands"
+  // },
+  // {
+  //   "key": "ctrl+shift+p",
+  //   "command": "runCommands",
+  //   "args": {
+  //     "commands": [
+  //       "workbench.action.focusWindow",
+  //       "workbench.action.showCommands",
+  //     ]
+  //   },
+  //   "systemWide": true,
+  // },
+  /*
+  ┌───────────────────────────┐
+  │ End of computer-dependant │
+  └───────────────────────────┘
+  */
+  
   {
     "key": "ctrl+k",
     "command": "editor.action.commentLine",
@@ -277,36 +317,6 @@
     "command": "workbench.action.tasks.test"
   },
   {
-    "key": "ctrl+p",
-    "command": "-workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.focusWindow",
-        "workbench.action.quickOpen",
-      ]
-    },
-    "systemWide": true,
-  },
-  {
-    "key": "ctrl+shift+p",
-    "command": "-workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+shift+p",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.focusWindow",
-        "workbench.action.showCommands",
-      ]
-    },
-    "systemWide": true,
-  },
-  {
     "key": "ctrl+shift+v",
     "command": "-markdown.extension.closePreview",
     "when": "activeWebviewPanelId == 'markdown.preview'"
@@ -337,5 +347,5 @@
     "key": "ctrl+shift+oem_3",
     "command": "terminal.focus",
     "when": "!terminalFocus"
-  }
+  },
 ]

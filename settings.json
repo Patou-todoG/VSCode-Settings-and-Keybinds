@@ -852,6 +852,8 @@
                     "color": "white",
                     "after": {
                         "contentText": "→ht",
+                        "backgroundColor": "green",
+                        "color": "white",
                     }
                     
                 },
@@ -866,6 +868,23 @@
                     "color": "white",
                     "after": {
                         "contentText": "→th",
+                        "backgroundColor": "green",
+                        "color": "white",
+                    }
+                },
+            ],
+        },
+        // Dorénavent
+        "dorénav(ent)": {
+            "decorations": [
+                {
+                    "overviewRulerColor": "red",
+                    "backgroundColor": "red",
+                    "color": "white",
+                    "after": {
+                        "contentText": "→ant",
+                        "backgroundColor": "green",
+                        "color": "white",
                     }
                 },
             ],
@@ -1452,5 +1471,5 @@
     ],
     "disableLigatures.mode": "Line",
     "editor.defaultColorDecorators": "always",
-"python.analysis.autoImportCompletions": true,
+    "python.analysis.autoImportCompletions": true,
 }

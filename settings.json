@@ -1217,7 +1217,7 @@
     "gitlens.plusFeatures.enabled": false,
     "[python]": {
         "editor.formatOnType": true,
-        "diffEditor.ignoreTrimWhitespace": true
+        "diffEditor.ignoreTrimWhitespace": false,
     },
     "discord.detailsDebugging": "Debugging {file_name} of {total_lines} lines.",
     "discord.detailsEditing": "Editing {file_name} of {total_lines} lines.",
@@ -1277,7 +1277,7 @@
         "editor.wordWrap": "off",
     },
     "liveServer.settings.file": "404.html",
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "editor.insertSpaces": false,
     "workbench.editor.pinnedTabSizing": "compact",
     "window.density.editorTabHeight": "compact",
@@ -1452,4 +1452,5 @@
     ],
     "disableLigatures.mode": "Line",
     "editor.defaultColorDecorators": "always",
+"python.analysis.autoImportCompletions": true,
 }

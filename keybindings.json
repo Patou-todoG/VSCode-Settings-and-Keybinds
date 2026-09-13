@@ -348,4 +348,20 @@
     "command": "terminal.focus",
     "when": "!terminalFocus"
   },
+  {
+    "key": "ctrl+alt+oem_comma",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "openEditors.closeAll"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
 ]

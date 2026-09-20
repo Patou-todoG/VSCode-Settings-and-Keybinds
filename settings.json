@@ -5,7 +5,8 @@
         "**/.classpath": true,
         "**/.factorypath": true,
         "**/.project": true,
-        "**/.settings": true
+        "**/.settings": true,
+        "**/*.uid*": true
     },
     "explorer.confirmDelete": false,
     "java.debug.settings.enableRunDebugCodeLens": false,

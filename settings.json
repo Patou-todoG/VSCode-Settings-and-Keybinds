@@ -1473,4 +1473,5 @@
     "disableLigatures.mode": "Line",
     "editor.defaultColorDecorators": "always",
     "python.analysis.autoImportCompletions": true,
+    "workbench.experimental.modernUI": false,
 }

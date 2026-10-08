@@ -1340,7 +1340,7 @@
     // "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     "editor.fontFamily": "Fira Code, DejaVu Sans Mono, Consolas, 'Courier New', monospace",
     // = == === != !== <= =>==|=<<=< <> a*b A*B g@&
-    "editor.fontLigatures": "'cv02', 'ss03'",
+    "editor.fontLigatures": "'cv02', 'ss03', 'calt'",
     // "editor.fontLigatures": true,
     // "editor.lineHeight": 1.1,
     "telemetry.telemetryLevel": "error",
@@ -1404,7 +1404,7 @@
     "workbench.editor.empty.hint": "hidden",
     "diffEditor.renderSideBySide": true,
     "intelliphp.inlineSuggestionsEnabled": false,
-"chat.disableAIFeatures": true,
+    "chat.disableAIFeatures": true,
     "java.configuration.updateBuildConfiguration": "automatic",
     "editor.foldingImportsByDefault": true,
     "java.sources.organizeImports.staticStarThreshold": 1,
@@ -1474,4 +1474,7 @@
     "editor.defaultColorDecorators": "always",
     "python.analysis.autoImportCompletions": true,
     "workbench.experimental.modernUI": false,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontLigatures.featureSettings": "'cv02', 'ss03', 'calt'",
 }
